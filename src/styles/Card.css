@@ -1,0 +1,31 @@
+.card-container.container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .intro {
+  padding-top: 5rem;
+} */
+
+.image {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 671px) {
+  .img-border {
+    position: relative;
+  }
+  
+  .img-border::before {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #555;
+    border-radius: .25rem;
+    content: '';
+  }
+}
