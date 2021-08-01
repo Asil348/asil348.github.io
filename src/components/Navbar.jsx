@@ -1,10 +1,9 @@
-import React from "react";
-import '../styles/Navbar.css'
+import React, { useEffect } from "react";
+import "../styles/Navbar.css";
 
 let expanded = false;
 
 const expandedNavbar = () => {
-
   let nav = document.querySelector("nav");
 
   expanded = !expanded;
@@ -14,10 +13,20 @@ const expandedNavbar = () => {
   } else {
     nav.classList.remove("bg-dark", "shadow-lg");
   }
-
-}
+};
 
 const Navbar = () => {
+  useEffect(() => {
+    let nav = document.querySelector("nav");
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 50) {
+        nav.classList.add("bg-dark", "shadow");
+      } else {
+        nav.classList.remove("bg-dark", "shadow");
+      }
+    });
+  });
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
