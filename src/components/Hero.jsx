@@ -1,25 +1,24 @@
 import React from "react";
 import "../styles/Hero.css";
 
-const Card = () => {
+const Hero = () => {
   return (
+    <>
     <div className="hero">
-      <div className="card-container container">
+      <div className="hero-container container">
         <div className="row">
           <div className="intro col-md-8 text-white">
             <h1 className="intro-title text-white display-1">Hi, I'm Asil.</h1>
-            <figure className="intro-text">
-              <blockquote className="blockquote">
-                <p>
-                  I am a senior high school student and a web developer located
-                  in Turkey. Nice to meet you!
-                </p>
-              </blockquote>
-            </figure>
+            <p className="intro-text">
+              I am a self-taught, innovative, and task-driven high school senior
+              and a web developer with 4+ years of experience in designing and
+              developing responsive, user-friendly interfaces and feature-rich
+              web applications. Nice to meet you!
+            </p>
           </div>
           <div className="col-md-4">
             <div className="image">
-              <div className="img-border">
+              <div className="wrap-image">
                 <img
                   src="./assets/images/asil_4_5.jpg"
                   className="img-fluid rounded"
@@ -34,9 +33,10 @@ const Card = () => {
           </div>
         </div>
       </div>
-      <div className="skew shadow-lg"></div>
     </div>
+    <div className="skew shadow-lg"></div>
+    </>
   );
 };
 
-export default Card;
+export default Hero;
