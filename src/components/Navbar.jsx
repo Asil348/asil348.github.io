@@ -29,7 +29,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav className="navbar navbar-expand-sm navbar-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="/">
           Asil Efe Akyol
