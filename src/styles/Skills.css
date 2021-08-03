@@ -1,0 +1,29 @@
+.skills {
+  margin-top: 5rem;
+}
+
+.skill {
+  background-color: #444;
+  width: 12rem;
+  min-height: 6rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.col-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 440px) {
+  .skill {
+    width: unset;
+    max-width: 10rem;
+  }
+}
