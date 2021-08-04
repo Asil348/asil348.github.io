@@ -29,12 +29,6 @@
   padding-right: 0.5rem;
 }
 
-.col-sm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media screen and (max-width: 440px) {
   .skill {
     width: 10rem;

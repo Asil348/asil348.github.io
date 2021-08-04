@@ -1,36 +1,38 @@
 .hero {
   min-height: 100vh;
   background-color: #222;
-}
 
-.hero-container.container {
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .intro {
   text-align: justify;
   padding-right: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-container {
-  padding-top: 80px;
 }
 
 @media screen and (max-width: 767px) {
   .intro {
     text-align: center;
   }
+  .hero-container {
+    padding-top: 80px;
+  }
+  .intro-text {
+    margin-bottom: 2rem;
+  }
+
+  .wrap-image::before, .wrap-image::after {
+    display: none;
+  }
+
+  .wrap-image img {
+    width: 60%;
+  }
 }
 
 .wrap-image {
   position: relative;
 }
+
 .wrap-image::before,
 .wrap-image::after {
   content: "";
@@ -109,9 +111,7 @@
 }
 
 .scroll {
-  left: 50%;
   transform: translateY(0%) rotate(45deg);
-
   opacity: 0;
 }
 @keyframes scrolldown {
