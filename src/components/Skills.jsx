@@ -92,7 +92,7 @@ const Skills = () => {
     <div className="skills container text-white">
       <h1 className="text-light">Skills</h1>
       <hr className="hr" />
-      <div className="row row-cols-2 gy-4 gx-0">
+      <div className="row row-cols-2 gy-4 gx-2">
         {skills.map((skill) => (
           <Skill key={skill.id} skill={skill} />
         ))}

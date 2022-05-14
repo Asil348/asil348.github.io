@@ -1,0 +1,36 @@
+.works {
+  margin-top: 5rem;
+}
+
+.work {
+  top: 0px;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.work:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
+  top: -4px;
+  cursor: pointer;
+}
+.work {
+  background-color: #444;
+  min-height: 6rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 440px) {
+  .work {
+    width: 10rem;
+    max-width: 10rem;
+  }
+}

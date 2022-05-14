@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="intro-title text-white display-1">Hi, I'm Asil.</h1>
             <p className="intro-text">
               I am a self-taught, innovative, and task-driven high school senior
-              and a web developer with 4+ years of experience in designing and
+              and a web developer based in Turkey with 4+ years of experience in designing and
               developing responsive, user-friendly interfaces and feature-rich
               web applications. Nice to meet you!
             </p>
@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="image">
               <div className="wrap-image d-flex justify-content-center">
                 <img
-                  src="./assets/images/asil_4_5.jpg"
+                  src="./assets/images/asil_new_4_3.jpg"
                   className="img-fluid rounded"
                   alt="Asil Efe Akyol"
                 />
