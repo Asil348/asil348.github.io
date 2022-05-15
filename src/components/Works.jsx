@@ -32,8 +32,8 @@ const Works = () => {
     {
       id: 4,
       title: "Spotify Collaborative Playlist Analyzer",
-      description: "Count stuff",
-      link: "https://github.com/Asil348/counter",
+      description: "Analyze your collaborative Spotify playlists.",
+      link: "https://github.com/Asil348/spotify-collaborative-playlist-analyzer",
       technologies: ["Javascript", "EJS", "Express", "RESTful APIs"],
     },
     {
@@ -52,17 +52,22 @@ const Works = () => {
       link: "https://github.com/jamesrchen/ImageConsumer",
       technologies: ["Javascript", "Discord.js"],
     },
+    {
+      id: 7,
+      title: "Euphobia Studios",
+      description: "Created, designed and maintained the Euphobia Store.",
+      link: "https://euphobiastudios.com/",
+      technologies: ["Wordpress, E-commerce, CSS, SEO"],
+    },
   ]);
 
   return (
     <div className="works container text-white">
       <h1 className="text-light">Works</h1>
       <hr className="hr" />
-      <div className="row">
-        {works.map((work) => (
-          <Work key={work.id} work={work} />
-        ))}
-      </div>
+      {works.map((work) => (
+        <Work key={work.id} work={work} />
+      ))}
     </div>
   );
 };

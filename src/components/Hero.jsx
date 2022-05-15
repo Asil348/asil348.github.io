@@ -27,7 +27,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-12 d-flex justify-content-center">
+          <div className="col-md-12 d-flex justify-content-center scroll-div">
             <div className="scroll scroll-first"></div>
             <div className="scroll scroll-second"></div>
           </div>
