@@ -9,3 +9,6 @@ p {
 hr {
   background-color: slategray
 }
+.anchor {
+  position: absolute;
+}

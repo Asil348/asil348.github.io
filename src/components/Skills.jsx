@@ -9,95 +9,98 @@ const Skills = () => {
     {
       id: 1,
       title: "JavaScript",
-      icon: ''
+      icon: "",
     },
     {
       id: 2,
       title: "TypeScript",
-      icon: ''
+      icon: "",
     },
     {
       id: 3,
       title: "Node.js",
-      icon: ''
+      icon: "",
     },
     {
       id: 4,
       title: "React.js",
-      icon: ''
+      icon: "",
     },
     {
       id: 5,
       title: "React Native",
-      icon: ''
+      icon: "",
     },
     {
       id: 6,
       title: "Vue.js",
-      icon: ''
+      icon: "",
     },
     {
       id: 7,
       title: "jQuery",
-      icon: ''
+      icon: "",
     },
     {
       id: 8,
       title: "Go",
-      icon: ''
+      icon: "",
     },
     {
       id: 9,
       title: "CSS",
-      icon: ''
+      icon: "",
     },
     {
       id: 10,
       title: "Bootstrap",
-      icon: ''
+      icon: "",
     },
     {
       id: 11,
       title: "SEO",
-      icon: ''
+      icon: "",
     },
     {
       id: 12,
       title: "Git",
-      icon: ''
+      icon: "",
     },
     {
       id: 13,
       title: "Python",
-      icon: ''
+      icon: "",
     },
     {
       id: 14,
       title: "Adobe Photoshop",
-      icon: ''
+      icon: "",
     },
     {
       id: 15,
       title: "Adobe InDesign",
-      icon: ''
+      icon: "",
     },
     {
       id: 16,
       title: "Sony Vegas",
-      icon: ''
+      icon: "",
     },
   ]);
 
   return (
-    <div className="skills container text-white">
-      <h1 className="text-light">Skills</h1>
-      <hr className="hr" />
-      <div className="row row-cols-2 gy-4 gx-2">
-        {skills.map((skill) => (
-          <Skill key={skill.id} skill={skill} />
-        ))}
+    <>
+      <div className="anchor" id="skills"></div>
+      <div className="skills container text-white">
+        <h1 className="text-light">Skills</h1>
+        <hr className="hr" />
+        <div className="row row-cols-2 gy-4 gx-2">
+          {skills.map((skill) => (
+            <Skill key={skill.id} skill={skill} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

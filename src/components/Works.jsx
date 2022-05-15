@@ -62,13 +62,16 @@ const Works = () => {
   ]);
 
   return (
-    <div className="works container text-white">
-      <h1 className="text-light">Works</h1>
-      <hr className="hr" />
-      {works.map((work) => (
-        <Work key={work.id} work={work} />
-      ))}
-    </div>
+    <>
+      <div className="anchor" id="works"></div>
+      <div className="works container text-white">
+        <h1 className="text-light">Works</h1>
+        <hr className="hr" />
+        {works.map((work) => (
+          <Work key={work.id} work={work} />
+        ))}
+      </div>
+    </>
   );
 };
 
