@@ -24,7 +24,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="form-control bg-dark text-light"
+                    className="form-control bg-dark text-light border-0"
                     id="nameInput"
                     placeholder="Name"
                     required
@@ -37,7 +37,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="form-control bg-dark text-light"
+                    className="form-control bg-dark text-light border-0"
                     id="emailInput"
                     placeholder="E-Mail"
                     required
@@ -50,7 +50,7 @@ const Contact = () => {
                   </label>
                   <textarea
                     type="text"
-                    className="form-control bg-dark text-light"
+                    className="form-control bg-dark text-light border-0"
                     id="textInput"
                     placeholder="What can I do for you?"
                     required
@@ -64,13 +64,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="divider">
-          <span></span>
-          <span>OR</span>
-          <span></span>
-        </div>
-        <h1 className="text-light text-center mb-3">Find me on:</h1>
-        <div className="center-m">
+        <div className="center-m mt-5">
           <div id="social-test">
             <ul className="social">
               <a
